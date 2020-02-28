@@ -32,6 +32,7 @@ class ForecastViewModel(val repository: ForecastRepository) : ViewModel() {
                 { success ->
                     success.statusCode = StatusCode.SUCCESS
                     currentWeather.value = success
+                    Log.d(TAG, "success${currentWeather.value?.base}")
                 }, { error ->
                     Log.d(TAG, "api error ${error.message}")
                     responseModel.msg = error.localizedMessage!!
@@ -39,5 +40,7 @@ class ForecastViewModel(val repository: ForecastRepository) : ViewModel() {
                     currentWeather.value = responseModel
                 })
     }
+
+
 
 }

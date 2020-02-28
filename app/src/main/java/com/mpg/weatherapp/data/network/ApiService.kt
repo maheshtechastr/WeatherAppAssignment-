@@ -15,15 +15,21 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    //using Rx
-    //weather?zip=110089,IN&APPID=d0a641e8d1accb9bb0ff0ef9dbe7a64a
+
     @GET("weather")
     fun getCurrentWeatherByZip(@Query("zip") zip: String, @Query("appid") appid: String = APP_ID): Observable<WeatherResponseModel>
 
-    //forecast?zip=94040&appid=b6907d289e10d714a6e88b30761fae22
-    @GET("forecast")
-    fun getWeeklyWeatherByZip(@Query("zip") zip: String, @Query("appid") appid: String = APP_ID): Observable<List<WeatherResponseModel>>
 
+    @GET("forecast")
+    fun getWeeklyWeatherByZip(@Query("zip") zip: String, @Query("appid") appid: String = APP_ID,
+                              @Query("cnt") count:Int = 7):
+            Observable<List<WeatherResponseModel>>
+/*
+*
+*  @GET("/data/{version}/forecast/daily")
+    fun getWeatherDataList(@Query("zip") zipCodeAndCountryCode:String,
+                               @Query("appid") appId:String,
+                                   @Query("cnt") count:Int): Observable<List<WeatherModel>>*/
 
     companion object {
         operator fun invoke(networkConnectionInterceptor: NetworkConnectionInterceptor): ApiService {

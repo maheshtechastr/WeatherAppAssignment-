@@ -17,6 +17,7 @@ import com.mpg.weatherapp.data.network.NetworkConnectionInterceptor
 import com.mpg.weatherapp.data.network.StatusCode
 import com.mpg.weatherapp.data.repository.ForecastRepository
 import com.mpg.weatherapp.databinding.FragmentForecastBinding
+import com.mpg.weatherapp.model.WeatherResponseModel
 import com.mpg.weatherapp.ui.viewmodel.ForecastViewModel
 import com.mpg.weatherapp.ui.viewmodel.ForecastViewModelFactory
 import com.mpg.weatherapp.utils.Utils
@@ -30,6 +31,10 @@ import kotlinx.android.synthetic.main.fragment_forecast.*
 class ForecastFragment : Fragment() {
 
     private val TAG = ForecastFragment::class.java.simpleName
+
+    val zip = "110030,IN"
+    val city  = "New Delhi"
+    val Country = "India"
 
     private val viewModel: ForecastViewModel by lazy {
         ViewModelProvider(
@@ -48,6 +53,8 @@ class ForecastFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflate the layout for this fragment
+
         // Inflate the layout for this fragment
         binding =
             DataBindingUtil.inflate(
@@ -73,23 +80,39 @@ class ForecastFragment : Fragment() {
     }
 
     private fun observeCurrentWeatherByZip() {
-        viewModel.currentWeather.observe(viewLifecycleOwner, Observer { success ->
-            when (success?.statusCode) {
-                StatusCode.START -> {
-                    Utils.hideKeyPad(activity!!)
-                    progress_bar.visibility = View.VISIBLE
-                }
-                StatusCode.SUCCESS -> {
-                    progress_bar.visibility = View.GONE
-                    Log.d("DEBUG", "Base ${success.base}")
+        viewModel.currentWeather.observe(
+            viewLifecycleOwner,
+            androidx.lifecycle.Observer { success ->
+                when (success?.statusCode) {
+                    StatusCode.START -> {
+                        Utils.hideKeyPad(activity!!)
+                        progress_bar.visibility = View.VISIBLE
+                    }
+                    StatusCode.SUCCESS -> {
+                        progress_bar.visibility = View.GONE
+                        setData(success)
+                        Log.d("DEBUG", "Base ${success.base.toString()}")
 
+                    }
+                    StatusCode.ERROR -> {
+                        progress_bar.visibility = View.GONE
+                        Utils.showToast(context!!, success.msg)
+                    }
                 }
-                StatusCode.ERROR -> {
-                    progress_bar.visibility = View.GONE
-                    Utils.showToast(context!!, success.msg)
-                }
-            }
-        })
+            })
 
     }
+
+
+    private fun setData(data: WeatherResponseModel) {
+        val str = "${city}, ${Country}"
+        cityText.text = str
+        condDescr.text = data.weather?.get(0)?.description
+        temp.text = data.main?.temp.toString()
+        press.text = data.main?.pressure.toString()
+        hum.text = data.main?.humidity.toString()
+        windSpeed.text = data.wind?.speed.toString()
+        windDeg.text = data.wind?.deg.toString()
+    }
+
 }
