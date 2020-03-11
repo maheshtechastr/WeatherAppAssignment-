@@ -8,47 +8,322 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../Weather-Assessment/app/src/main/java/com/example/weatherassessment/ui/ForecastFragment.kt">
+        <entry key="/fragment.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../Weather-Assessment/app/src/main/java/com/example/weatherassessment/ui/ForecastViewModel.kt">
+        <entry key="/fragment.kt">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/weatherapp/data/network/ApiService.kt">
+        <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/weatherapp/ui/adapter/WeatherListAdapter.kt">
+        <entry key="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/mpg/assignment1/BuildConfig.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/weatherapp/ui/fragments/ForecastFragment.kt">
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/mpg/assignment1/DataBinderMapperImpl.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/weatherapp/ui/viewmodel/ForecastViewModel.kt">
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/mpg/assignment1/databinding/MainFragmentBindingImpl.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/weatherapp/ui/viewmodel/WeatherViewModel.kt">
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_forecast.xml">
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/Repositories.kt">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/layout/weather_item.xml">
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/SharedViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/adapter/ListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/app/App.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/base/BaseActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/base/BaseFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/base/BaseRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/binding/AdpaterBinding.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/Repositories.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/Repository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/ErrorEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/ResponseModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/ResponseResult.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/User.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/WeatherModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/models/WeatherModelList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/retrofit/AppApi.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/retrofit/AppApiService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/data/retrofit/RetrofitService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/extentions/Extention.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/models/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/models/User.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/activities/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/adapter/ListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/adapter/MyItemRecyclerViewAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/adapter/WeatherListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/fragments/ItemFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/fragments/MainFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/fragments/MyItemRecyclerViewAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/fragments/WeatherDailyFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/fragments/WeatherListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/ui/main/MainFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/DataItemViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/MainActivityViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/MainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/UserListViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/ViewModelFactety.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/ViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/ViewModelFactotry.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/ViewModelFactoty.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/WeatherListItemViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mpg/assignment1/viewmodel/WeatherListViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather_daily.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/main_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/weather_list_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blog-android-clean-coding-approach-master/build.gradle">
           <value>
             <set />
           </value>

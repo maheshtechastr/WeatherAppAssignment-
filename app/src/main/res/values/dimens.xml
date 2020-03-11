@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textSizeN">16sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_7sdp">7dp</dimen>
+    <dimen name="height_title_bar">70dp</dimen>
+
+</resources>

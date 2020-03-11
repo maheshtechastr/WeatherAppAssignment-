@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.mpg.assignment1.viewmodel.WeatherListItemViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_7sdp"
+        android:layout_height="wrap_content">
+
+        <!--        <ImageView
+                    android:id="@+id/condIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cityText"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/cityText"
+                    tools:src="@mipmap/ic_launcher_round" />-->
+
+        <TextView
+
+            android:id="@+id/condDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/description +viewModel.weatherDataItem.weatherList.get(0).description}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/description" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/temp + String.valueOf(viewModel.weatherDataItem.main.temp)}"
+            app:layout_constraintStart_toStartOf="@id/condDescr"
+           app:layout_constraintTop_toBottomOf="@id/condDescr"
+            tools:text="@string/temp" />
+
+
+        <TextView
+            android:id="@+id/press"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/temp"
+            app:layout_constraintTop_toBottomOf="@id/condDescr"
+            android:text="@{@string/pressure + String.valueOf(viewModel.weatherDataItem.main.pressure)}"
+            tools:text="@string/valu" />-->
+
+
+       <TextView
+            android:id="@+id/windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/temp"
+            android:text="@{@string/speed + String.valueOf(viewModel.weatherDataItem.wind.speed)}"
+            tools:text="@string/valu" />
+
+        <TextView
+            android:id="@+id/windDeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toBottomOf="@id/windSpeed"
+            android:text="@{@string/deg + String.valueOf(viewModel.weatherDataItem.wind.deg)}"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/valu" />
+-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

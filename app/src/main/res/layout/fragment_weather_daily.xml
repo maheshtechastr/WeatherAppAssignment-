@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.mpg.assignment1.viewmodel.WeatherDailyViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.WeatherDailyFragment">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_weather_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/cityText"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@{@string/city + viewModel.weatherLiveData.name}"
+                tools:text="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/condIcon"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cityText"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_launcher_round"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/tvDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/condIcon"
+                android:layout_alignStart="@id/condIcon"
+                android:text="@string/date"
+                tools:text="@string/date" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/condIcon"
+                android:layout_toEndOf="@id/tvDateLabel"
+                app:date="@{viewModel.weatherLiveData.dt}"
+                tools:text="@string/date" />
+
+            <TextView
+                android:id="@+id/condDescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateLabel"
+                android:layout_alignStart="@id/tvDateLabel"
+                android:text="@{@string/description +viewModel.weatherLiveData.weatherList.get(0).description}"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/condDescr"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/condDescr"
+                android:text="@{@string/temp + String.valueOf(viewModel.weatherLiveData.main.temp)}"
+                tools:text="@string/temp" />
+
+            <TextView
+                android:id="@+id/pressLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/condDescr"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/pressure" />
+
+            <TextView
+                android:id="@+id/press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/pressLab"
+                android:layout_toEndOf="@id/pressLab"
+                android:text="@{String.valueOf(viewModel.weatherLiveData.main.pressure)}"
+                tools:text="@string/valu" />
+
+            <TextView
+                android:id="@+id/humLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pressLab"
+                android:layout_alignParentStart="true"
+                android:text="@string/humidity" />
+
+            <TextView
+                android:id="@+id/hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/humLab"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/humLab"
+                android:text="@{String.valueOf(viewModel.weatherLiveData.main.humidity)}"
+                tools:text="@string/valu" />
+
+            <TextView
+                android:id="@+id/windLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humLab"
+                android:layout_alignParentStart="true"
+                android:text="@string/wind" />
+
+            <TextView
+                android:id="@+id/windSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/windLab"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/windLab"
+                android:text="@{@string/speed + String.valueOf(viewModel.weatherLiveData.wind.speed)}"
+                tools:text="@string/valu" />
+
+            <TextView
+                android:id="@+id/windDeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/windLab"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/windSpeed"
+                android:text="@{@string/deg + String.valueOf(viewModel.weatherLiveData.wind.deg)}"
+                tools:text="@string/valu" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/weeklyWeatherList"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:text="@string/get_weekly_report"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:elevation="@dimen/_7sdp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.loadingVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

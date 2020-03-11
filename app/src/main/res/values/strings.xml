@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">WeatherApp</string>
-    <string name="txt_title_forecast">Forecast</string>
-    <string name="message_no_data_connection">Make sure you have an active data connection</string>
-
+    <string name="app_name">WeatherAppAssignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="pressure"><b>"Pressure: "</b></string>
+    <string name="humidity"><b>"Humidity: "</b></string>
+    <string name="wind"><b>"Wind: "</b></string>
+    <string name="city"><b>"City: "</b></string>
+    <string name="speed"><b>"Speed: "</b></string>
+    <string name="deg"><b>"Degree: "</b></string>
+    <string name="temp"><b>"Temperature: "</b></string>
+    <string name="date"><b>"Date: "</b></string>
+    <string name="description"><b>"Description: "</b></string>
+    <string name="valu">\"0.0\"</string>
+    <string name="get_weekly_report">Get Weekly Weather Report</string>
 </resources>
